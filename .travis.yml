@@ -7,6 +7,6 @@ services:
   - docker build -t sridjnath09/docker-react  . 
 
 script:
-  - docker run  sridjnath09/docker-react npm run test -- -- coverage
+  - docker run -e CI=true sridjnath09/docker-react npm run test
 
 
